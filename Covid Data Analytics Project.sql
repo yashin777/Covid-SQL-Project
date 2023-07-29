@@ -30,7 +30,7 @@ FROM owid_covid_data ocd
 Group by location,population 
 order by highest_infection_rate DESC
 
--- showing countries highest deaths --error
+-- showing countries highest deaths 
 SELECT location , MAX(total_deaths) as TotalDeathCount
 FROM owid_covid_data ocd
 -- WHERE location like '%states%'
